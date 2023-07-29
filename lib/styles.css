@@ -2279,7 +2279,7 @@ a {
     text-transform: none;
     white-space: normal;
     -webkit-text-fill-color: inherit;
-    background-color: #0e161b;
+    background-color: #0f161b;
     background-clip: border-box;
     order: -1;
     justify-content: center;
@@ -2293,6 +2293,10 @@ a {
     left: 0%;
     right: auto;
     box-shadow: 0 1px 20px rgba(0, 0, 0, .2);
+}
+
+.navbar.alt-dark-fill {
+    background-color: #212229;
 }
 
 .brand {
@@ -2334,17 +2338,30 @@ a {
     display: flex;
 }
 
+.body.alt-fill-1 {
+    background-color: #c5b7d1;
+}
+
 .hero-background-image {
     width: 100%;
     height: 70vh;
     max-height: 100vh;
     background-image: linear-gradient(rgba(244, 182, 95, .16), rgba(244, 182, 95, .16)), url("https://uploads-ssl.webflow.com/64bf6316f568407726a61538/64c1f6f1c3eccac8b62e62d1_aerial-view-uc-san-diego-to-west-UCSanDiego-ErikJepsen.jpg");
     background-position: 0 0, 50%;
+    background-repeat: repeat, repeat;
     background-size: auto, cover;
     background-attachment: scroll, scroll;
     flex-direction: column;
     justify-content: space-between;
     display: flex;
+}
+
+.hero-background-image.alt-image {
+    background-image: url("https://uploads-ssl.webflow.com/64bf6316f568407726a61538/64c5970512a0007506f5bd4e_ian-keefe-OgcJIKRnRC8-unsplash.jpg");
+    background-position: 50%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 .content-container {
@@ -2359,6 +2376,10 @@ a {
     left: 0;
     right: 0;
     box-shadow: 0 1px 1px 1px rgba(196, 196, 196, .77);
+}
+
+.content-container.content-container-alt-color {
+    color: #2f2b2f;
 }
 
 .profile-wrapper {
@@ -2377,6 +2398,12 @@ a {
     color: #f3b75f;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.profile-h1.alt-main-text {
+    color: #9b6455;
+    text-align: left;
+    -webkit-text-stroke-color: #9b6455;
 }
 
 .heading {
@@ -2410,11 +2437,19 @@ a {
     margin-bottom: 15px;
 }
 
+.hr.hr-left.hr-alt-color {
+    background-color: #966756;
+}
+
 .hr.hr-center {
     background-color: #f4b85f;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hr.hr-center.hr-color-alt {
+    background-color: #966756;
 }
 
 .profile-right-col {
@@ -2437,6 +2472,10 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.profile-social-media-div.alt-dark-fill {
+    background-color: #59627b;
 }
 
 .button-list {
@@ -2489,7 +2528,7 @@ a {
 }
 
 .heading-2 {
-    color: #183044;
+    color: #3b3840;
     text-align: center;
     letter-spacing: .5px;
     text-transform: uppercase;
@@ -2538,9 +2577,20 @@ a {
     display: flex;
 }
 
-.paragraph-2,
+.paragraph-2 {
+    margin-bottom: 10px;
+}
+
+.paragraph-2.paragraph-alt-color {
+    color: #212229;
+}
+
 .paragraph-3 {
     margin-bottom: 10px;
+}
+
+.paragraph-3.paragraph-alt-color {
+    color: #212229;
 }
 
 .header-button-list {
@@ -2582,6 +2632,55 @@ a {
 
 .link {
     color: #eebb65;
+}
+
+.switch {
+    color: #fcf7f9;
+    letter-spacing: .25px;
+    -webkit-text-stroke-color: #fcf7f9;
+    cursor: pointer;
+    margin: auto;
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+    display: flex;
+    position: fixed;
+    top: auto;
+    bottom: 43px;
+    left: auto;
+    right: auto;
+}
+
+.switch:hover {
+    filter: invert(40%);
+    color: #fff;
+}
+
+.switch:focus-visible {
+    filter: invert(40%);
+    outline-offset: 0px;
+    color: #0050bd;
+    border-radius: 4px;
+    outline: 2px solid #0050bd;
+}
+
+.switch[data-wf-focus-visible] {
+    filter: invert(40%);
+    outline-offset: 0px;
+    color: #0050bd;
+    border-radius: 4px;
+    outline: 2px solid #0050bd;
+}
+
+.swich-icon {
+    width: 50px;
+    filter: invert();
+    -webkit-text-fill-color: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    margin-right: 0;
 }
 
 @media screen and (min-width: 1920px) {
@@ -2641,6 +2740,14 @@ a {
 
     .content-container {
         margin-top: 60px;
+    }
+
+    .switch {
+        width: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0 5px;
+        position: static;
     }
 }
 
@@ -2715,6 +2822,14 @@ a {
 
     .header-button-list {
         justify-content: center;
+    }
+
+    .switch {
+        align-items: stretch;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
